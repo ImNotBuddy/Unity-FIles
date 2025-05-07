@@ -3,9 +3,9 @@ using UnityEngine;
 public class CameraHandler : MonoBehaviour
 {
     [Header("Assignables")]
-    [SerializeField] Transform cameraHolder;
-    [SerializeField] Transform cameraTargetPosition;
-    [SerializeField] Transform playerModelHolder;
+    [SerializeField] Transform cameraHolder; // your camera should be inside an empty game object with both transforms reset to prevent the camera jittering
+    [SerializeField] Transform cameraTargetPosition; // where you want the camera to snap to each frame
+    [SerializeField] Transform playerModelHolder; // empty game object that containes the players model to allow for rotation. useful if you have arms or whatever idk
     [SerializeField] InputReader inputReader;
 
     [Header("Settings")]
