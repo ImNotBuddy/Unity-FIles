@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class InputReader : MonoBehaviour
 {
-    PlayerInputActions playerInputActions;
+    PlayerInputActions playerInputActions; // you gotta change the class name and probably variable name to whatever your input action is called. make sure to press generate c# class
 
     void Awake()
     {
